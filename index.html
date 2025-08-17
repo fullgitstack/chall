@@ -8,10 +8,8 @@
     <input type="text" name="username" value="test">
     <input type="checkbox" name="status" value="true" checked>
     </form>
-  </body>
 
-  
-  <script>
+    <script>
      const connection = new WebSocket('ws://ctf09.root-me.org/ws')
 
          connection.onopen = function () {
@@ -20,4 +18,5 @@
         connection.onmessage = function (message) {
         console.log(message)
   </script>
+  </body>
 </html>
