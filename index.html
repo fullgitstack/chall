@@ -12,6 +12,12 @@
 
   
   <script>
-     document.forms[0].submit()
+     const connection = new WebSocket('ws://ctf09.root-me.org/ws')
+
+         connection.onopen = function () {
+            connection.send("hello"); 
+         };  
+        connection.onmessage = function (message) {
+        console.log(message)
   </script>
 </html>
