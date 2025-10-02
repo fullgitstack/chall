@@ -1,7 +1,7 @@
 const fn = async () => {
 
 
-window.document.href = `https://tyyhty.requestcatcher.com/reussi`;
+window.document.href = 'https://tyyhty.requestcatcher.com/reussi';
 
 
 
