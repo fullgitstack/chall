@@ -1,8 +1,7 @@
 const fn = async () => {
 
 
-
-window.location.href = `https://tyyhty.requestcatcher.com/hello2`
+fetch(`https://tyyhty.requestcatcher.com/hello3`)
 
 
 
