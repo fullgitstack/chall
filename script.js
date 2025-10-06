@@ -5,5 +5,5 @@ ifr.src = "http://challenge01.root-me.org/web-client/ch23/index.php?action=profi
 body1.appendChild(ifr)
 
 const token = document.querySelector("iframe body #token")
-console.log(token)
+console.log(ifr)
 
