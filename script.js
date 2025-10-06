@@ -1,1 +1,1 @@
-fetch('https://yt54h.requestcatcher.com/test')
+window.location.href = "https://yt54h.requestcatcher.com/test"
