@@ -1,5 +1,5 @@
 const ifr = document.querySelector("#principalIframe");
-cont insideIfr = ifr.contentDocument;
+const insideIfr = ifr.contentDocument;
 ifr.src = "http://challenge01.root-me.org/web-client/ch23/index.php?action=profile"
 
 insideIfr.querySelector("#username").value = "test1"
