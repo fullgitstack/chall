@@ -1,5 +1,4 @@
 const ifr = document.querySelector("#principalIframe");
-ifr.src = "http://challenge01.root-me.org/web-client/ch23/index.php?action=profile"
 
 ifr.addEventListener("load", () => {
 
