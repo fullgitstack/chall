@@ -1,7 +1,7 @@
+
+
+document.addEventListener("DOMContentLoaded", () => {
 const ifr = document.querySelector("#principalIframe");
-
-ifr.addEventListener("load", () => {
-
 ifr.contentDocument.querySelector("#username").value = "test1"
 ifr.contentDocument.querySelector("#status").checked = true
 
