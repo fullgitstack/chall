@@ -1,4 +1,4 @@
-const ifr = document.querySelector("#principalIframe");
+const ifr = document.querySelector("#principalObject");
 
 ifr.addEventListener("load", () => {
 ifr.contentDocument.querySelector("#username").value = "test1"
