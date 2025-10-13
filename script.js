@@ -1,3 +1,5 @@
+const body1 = document.querySelector("body")
+
 const html1 = `
 <iframe
  id="iframe1"
@@ -8,7 +10,7 @@ const html1 = `
 
 `
 
-document.body.innerHTML += html1
+body1.innerHTML += html1
 
 
 
