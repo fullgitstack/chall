@@ -8,7 +8,7 @@ const html1 = `
 
 `
 
-document.body.appendChild(html1)
+document.body.append(html1)
 
 
 
