@@ -8,7 +8,7 @@ const html1 = `
 
 `
 
-document.body.append(html1)
+document.body.innerHTML += html1
 
 
 
