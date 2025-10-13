@@ -14,7 +14,7 @@ onload='
     pseudo.value = "test1";
     status.checked = true;
     doc.forms[0].submit();
-  }, 1000); '
+  }, 4000); '
 >
 </iframe>
 
